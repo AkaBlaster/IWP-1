@@ -37,7 +37,7 @@
             <li><a class="nav-link" href="#ContactPage">Pricing</a></li>
             <li><a class="nav-link" href="contact.php">Contact</a></li>
             <a class="login" data-visible href="Weblogin.php">Login</a>
-            <a class="cta" data-visible href="../SignupDirectory/SignUp.html">Sign up</a>
+            <a class="cta" data-visible href="SignUp.php">Sign up</a>
         </ul>
     </nav>
 </header>
