@@ -11,28 +11,28 @@
     <body>
     <div class="container">
         <div class="column1">
-            <form id="form" class="form">
+            <form id="form" class="form" action="Add_Cust.php" method="get">
                 <h2>Register with us</h2>
                 <div class="form-control">
                     <label for='username'>Fullname</label>
-                    <input type="text" id="username" placeholder="Enter name">
+                    <input type="text" name="cust_name" id="username" placeholder="Enter name">
                     <small>Error message</small>
                 </div>
                 <div class="form-control">
                     <label for='email'>Email</label>
-                    <input type="text" id="email" placeholder="Enter email">
+                    <input type="text" name="cust_email" id="email" placeholder="Enter email">
                     <small>Error message</small>
                 </div>
 
                 <div class="form-control">
                     <label for='Mobile'>Mobile</label>
-                    <input type="text" id="Mobile" placeholder="Enter Mobile">
+                    <input type="text" name="cust_mobile" id="Mobile" placeholder="Enter Mobile">
                     <small>Error message</small>
                 </div>
 
                 <div class="form-control">
                     <label for='Country'>Country</label>
-                    <input type="text" id="Country" placeholder="Enter Country">
+                    <input type="text" name="cust_country" id="Country" placeholder="Enter Country">
                     <small>Error message</small>
                 </div>
 
@@ -44,15 +44,15 @@
 
                 <div class="form-control">
                     <label for='password'>Password</label>
-                    <input type="password" id="password" placeholder="Enter password">
+                    <input type="password" name="cust_pwd" id="password" placeholder="Enter password">
                     <small>Error message</small>
                 </div>
                 <div class="form-control">
                     <label for='password2'>Confirm Password</label>
-                    <input type="password" id="password2" placeholder="Enter password again ">
+                    <input type="password" name="cust_confirm_pwd" id="password2" placeholder="Enter password again ">
                     <small>Error message</small>
                 </div>
-                <button id="ImgChange">Register</button>
+                <button id="ImgChange" name="submit">Register</button>
                 <p  class="HomeAnchor">Back to HomePage <a href="Home.php">HomePage</a></p>
 
             </form>

@@ -1,5 +1,4 @@
 <?php
-
 	$conn = new mysqli("localhost","root","","wehost");
 	//STATIC $cust_id = 101 ;
 	$name = $_GET['cust_name'] ;
@@ -15,8 +14,7 @@
 		$query = "INSERT INTO `signup` VALUES (DEFAULT, '$name', '$email', $mobile, '$country', '$pwd1');" ;
 
 		$result = mysqli_query($conn, $query);
-		
-		if($result == true)
+		if($result === true)
 		{
                 echo "category added successfully";
                 header('location:Home.php');
@@ -24,13 +22,11 @@
         else
 		{
 			echo "Invalid";
-			//header('location:Signup.php') ;
 		}
 	}
 	else
 		{
 			echo "Invalid";
-			//header('location:Signup.php') ;
 		}
 	mysqli_close($conn);
 ?>
